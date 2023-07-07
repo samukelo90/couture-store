@@ -6,6 +6,11 @@
   
 }
 
+body{
+  font-family: 'Montserrat', sans-serif;
+
+}
+
 body {
   overflow-x: hidden; /* Prevent horizontal scrolling */
   width: 100%;
@@ -165,6 +170,10 @@ padding: 50px 0;
 h4{
   color: rgb(64, 64, 64);
   font-weight: normal;
+}
+
+.ind:hover{
+  color: red;
 }
 
 .column-four p{
