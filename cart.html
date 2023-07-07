@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device=width, initial-scale= 1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Couture Steps | ecommerse website</title>
+  <link rel="stylesheet" href="style.css" >
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+
+
+</style>
+
+</head>
+<body>
+    <div class="container">
+
+      <div class="navbar">
+        <div class="logo">
+          <a class="emblem" href="index.html">Couture steps</a>
+        </div>
+        <nav>
+
+         
+
+          <ul id="MenuItems">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="product.html">Products</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="account.html">Account</a></li>
+          </ul>
+         <a href="cart.html"> <img class="cart" src="images/cart.png" width="30px" height="30px"> </a>
+          <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </nav>    
+      </div>
+    </div>
+
+    <div class="c-container cart-pg">
+      <table>
+        <tr>
+          <th>product</th>
+          <th>quantity</th>
+          <th>subtotal</th>
+        </tr>
+        <tr>
+          <td>
+            <div class="cart-info">
+              <img src="images/buy-1.jpg">
+              <div>
+                <p>Red Puma t-shirt</p>
+                <small>$50.00</small>
+                <br>
+                <a href="">Remove</a>
+              </div>
+          </div>
+        </td>
+          <td><input type="number" value="1"></td>
+          <td>50$</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="cart-info">
+              <img src="images/buy-2.jpg">
+              <div>
+                <p>Adidas Sneaker</p>
+                <small>$80.00</small>
+                <br>
+                <a href="">Remove</a>
+              </div>
+          </div>
+        </td>
+          <td><input type="number" value="1"></td>
+          <td>50$</td>
+        </tr>
+
+        <tr>
+          <td>
+            <div class="cart-info">
+              <img src="images/buy-3.jpg">
+              <div>
+                <p>Grey trousers</p>
+                <small>$70.00</small>
+                <br>
+                <a href="">Remove</a>
+              </div>
+          </div>
+        </td>
+          <td><input type="number" value="1"></td>
+          <td>50$</td>
+        </tr>
+      </table>
+
+      <div class="total">
+        <table>
+          <tr>
+            <td>Subtotal</td>
+            <td>$200.00</td>
+          </tr>
+          <tr>
+            <td>TAX</td>
+            <td>$15</td>
+          </tr>
+          <tr>
+            <td>TOTAL</td>
+            <td>$215</td>
+          </tr>
+        </table>
+      </div>
+      
+    </div>
+
+
+
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+         <div class="footer-col-one">
+          <h3>Download Our App</h3>
+          <div class="app-store">
+            <img src="images/play-store.png">
+            <img src="images/app-store.png">
+          </div>
+         </div>
+
+         <div class="footer-col-two">
+          <h1 class="emblem">Couture Steps</h1>
+         </div>
+         <div class="footer-col-three">
+          <h3>useful links</h3>
+          <ul>
+            <li>Voucher</li>
+            <li>Blog post</li>
+            <li>Return policy</li>
+          </ul>
+         </div>
+
+         <div class="footer-col-three">
+          <h3>Follow us on</h3>
+          <ul>
+            <li>Facebook</li>
+            <li>Instagram</li>
+            <li>Twitter</li>
+          </ul>
+         </div>
+
+      </div>
+      <hr>
+      <div class="copyright">
+        &copy; 2023 Couture Step. All rights reserved.
+      </div>
+    </div>
+  </div>
+
+  <script>
+    var MenuItems = document.getElementById("MenuItems");
+    MenuItems.style.maxHeight = "0px";
+  
+    function menutoggle() {
+      if (MenuItems.style.maxHeight == "0px") {
+        MenuItems.style.maxHeight = "200px";
+      } else {
+        MenuItems.style.maxHeight = "0px";
+      }
+    }
+  </script>
+  
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device=width, initial-scale= 1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Couture Steps | ecommerse website</title>
+  <link rel="stylesheet" href="style.css" >
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+
+
+</style>
+
+</head>
+<body>
+    <div class="container">
+
+      <div class="navbar">
+        <div class="logo">
+          <a class="emblem" href="#">Couture steps</a>
+        </div>
+        <nav>
+
+         
+
+          <ul id="MenuItems">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="product.html">Products</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="account.html">Account</a></li>
+          </ul>
+          <a href="cart.html"><img class="cart" src="images/cart.png" width="30px" height="30px"></a>
+          <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </nav>    
+      </div>
+    </div>
+
+    <!-- Account page -->
+    
+   <div class="account-pg">
+    <div class="container">
+      <div class="row">
+        <div class="column-two">
+          <img src="images/image1.png" width="100%">
+        </div>
+        <div class="column-two">
+          <div class="form-container">
+            <div class="form-btn">
+              <span onclick="login()">Log in</span>
+              <span onclick="Register()">Register</span>
+              <hr id="indicator">
+
+            </div>
+            <form id="loginform">
+              <input type="text" placeholder="Username">
+              <input type="password" placeholder="password">
+              <button class="btn" type="submit">Log in</button>
+              <a href="#">Forgot password</a>
+            </form>
+
+            <form id="regform">
+              <input type="text" placeholder="Username">
+              <input type="email" placeholder="email">
+              <input type="password" placeholder="password">
+              <button class="btn" type="submit">Register</button>
+            </form>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+   </div>
+
+  <!-- footer -->
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+         <div class="footer-col-one">
+          <h3>Download Our App</h3>
+          <div class="app-store">
+            <img src="images/play-store.png">
+            <img src="images/app-store.png">
+          </div>
+         </div>
+
+         <div class="footer-col-two">
+          <h1 class="emblem">Couture Steps</h1>
+         </div>
+         <div class="footer-col-three">
+          <h3>useful links</h3>
+          <ul>
+            <li>Voucher</li>
+            <li>Blog post</li>
+            <li>Return policy</li>
+          </ul>
+         </div>
+
+         <div class="footer-col-three">
+          <h3>Follow us on</h3>
+          <ul>
+            <li>Facebook</li>
+            <li>Instagram</li>
+            <li>Twitter</li>
+          </ul>
+         </div>
+
+      </div>
+      <hr>
+      <div class="copyright">
+        &copy; 2023 Couture Step. All rights reserved.
+      </div>
+    </div>
+  </div>
+
+  <script>
+    var MenuItems = document.getElementById("MenuItems");
+    MenuItems.style.maxHeight = "0px";
+  
+    function menutoggle() {
+      if (MenuItems.style.maxHeight == "0px") {
+        MenuItems.style.maxHeight = "200px";
+      } else {
+        MenuItems.style.maxHeight = "0px";
+      }
+    }
+  </script>
+
+  <!-- js for toggle form -->
+
+  <script>
+
+    var loginform = document.getElementById("loginform");
+    var regform = document.getElementById("regform");
+    var indicator = document.getElementById("indicator");
+
+    function Register(){
+     regform.style.transform = "translateX(0px)";
+     loginform.style.transform = "translateX(0px)";
+     indicator.style.transform = "translateX(100px)";
+
+    }
+    function login(){
+     regform.style.transform = "translateX(300px)";
+     loginform.style.transform = "translateX(300px)";
+     indicator.style.transform = "translateX(0px)";
+
+    }
+
+  </script>
+  
+</body>
+</html>
